@@ -1,0 +1,14 @@
+import React from 'react'
+
+function Avatar({ url, className }) {
+    return (
+        <img 
+            loading="lazy" 
+            src={url} 
+            alt="avatar" 
+            className={`h-10 rounded-full cursor-pointer transition duration-200 transform hover:scale-110 ${className}`}
+        />
+    )
+}
+
+export default Avatar
